@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Disease Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>🏥 MediCare </h2>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>🏥 Medical Disease Prediction System</h1>
+
+        <p>
+            Predict diseases instantly using Artificial Intelligence and
+            Machine Learning technology.
+        </p>
+
+        <a href="#prediction">
+            <button class="hero-btn">Start Prediction</button>
+        </a>
+    </div>
+
+</section>
+<section class="services">
+
+<h2>Why Choose MediCare AI?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🤖 AI Technology</h3>
+<p>Uses Machine Learning algorithms for disease prediction.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Fast Prediction</h3>
+<p>Get instant disease prediction within seconds.</p>
+</div>
+
+<div class="card">
+<h3>🩺 Trusted System</h3>
+<p>Designed for educational and healthcare support.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="form-section" id="prediction">
+
+<h2>Patient Details</h2>
+
+<form action="/predict" method="POST">
+
+<input type="text" name="name" placeholder="Patient Name" required>
+
+<input type="number" name="age" placeholder="Age" required>
+
+<select name="gender">
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<h2>Symptoms</h2>
+
+<select name="Fever">
+<option value="1">Fever - Yes</option>
+<option value="0">Fever - No</option>
+</select>
+
+<select name="Cough">
+<option value="1">Cough - Yes</option>
+<option value="0">Cough - No</option>
+</select>
+
+<select name="Headache">
+<option value="1">Headache - Yes</option>
+<option value="0">Headache - No</option>
+</select>
+
+<select name="Fatigue">
+<option value="1">Fatigue - Yes</option>
+<option value="0">Fatigue - No</option>
+</select>
+
+<button type="submit">
+Predict Disease
+</button>
+
+</form>
+
+</section>
+<section class="statistics">
+
+<h2>Our Achievement</h2>
+
+<div class="cards">
+
+<div class="card">
+<h1>700+</h1>
+<p>Dataset Records</p>
+</div>
+
+<div class="card">
+<h1>20+</h1>
+<p>Diseases</p>
+</div>
+
+<div class="card">
+<h1>95%</h1>
+<p>Accuracy</p>
+</div>
+
+<div class="card">
+<h1>24/7</h1>
+<p>Support</p>
+</div>
+
+</div>
+
+</section>
+<section class="stats">
+
+<h2>Why Choose Us?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h1>700+</h1>
+<p>Patient Records</p>
+</div>
+
+<div class="card">
+<h1>95%</h1>
+<p>Prediction Accuracy</p>
+</div>
+
+<div class="card">
+<h1>24/7</h1>
+<p>Online Support</p>
+</div>
+
+<div class="card">
+<h1>AI</h1>
+<p>Machine Learning Based</p>
+</div>
+
+</div>
+
+</section>
+
+</section>
+<section class="review">
+
+<h2>Patient Feedback</h2>
+
+<div class="cards">
+
+<div class="card">
+<p>
+⭐⭐⭐⭐⭐
+<br><br>
+Very easy to use and prediction is quick.
+</p>
+
+<h3>- Nikita Patil</h3>
+</div>
+
+<div class="card">
+<p>
+⭐⭐⭐⭐⭐
+<br><br>
+Beautiful interface and easy navigation.
+</p>
+
+<h3>- Sneha More</h3>
+</div>
+
+<div class="card">
+<p>
+⭐⭐⭐⭐⭐
+<br><br>
+Helpful project for learning Machine Learning.
+</p>
+
+<h3>- Anita Sharma</h3>
+</div>
+
+</div>
+
+</section>
+<section class="emergency">
+
+<h2>🚑 Emergency Help</h2>
+
+<p>
+Need immediate medical assistance?
+Contact the nearest hospital or emergency services.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>📞 Emergency</h3>
+<p>108</p>
+</div>
+
+<div class="card">
+<h3>🏥 Ambulance</h3>
+<p>102</p>
+</div>
+
+<div class="card">
+<h3>👨‍⚕️ Doctor Support</h3>
+<p>24 × 7 Available</p>
+</div>
+
+</div>
+
+</section>
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="card">
+
+<h3>Can this website diagnose diseases?</h3>
+
+<p>
+No. It only predicts diseases using Machine Learning.
+Always consult a qualified doctor.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Is the prediction accurate?</h3>
+
+<p>
+The prediction depends on the dataset and symptoms entered by the user.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Is my data stored?</h3>
+
+<p>
+No. This project is for educational purposes and does not store personal data.
+</p>
+
+</div>
+
+</section>
+<footer>
+
+<h2>🏥 Medical Disease Prediction System</h2>
+
+<p>
+AI Powered Disease Prediction Website
+</p>
+
+<p>
+Developed by <b>Komal More
+                Arti Sahane
+                Aamruta Jadhav
+</b>
+</p>
+
+<p>
+© 2026 All Rights Reserved.
+</p>
+
+</footer>
+<!-- ================= CHATBOT ================= -->
+
+<div id="chatbot-btn">💬</div>
+
+<div id="chatbot">
+
+    <div id="chat-header">
+        <span>🤖 MediCare </span>
+        <button id="close-chat">✖</button>
+    </div>
+
+    <div id="chat-body">
+        <div class="bot">
+    👋 Hello! I am MediCare.
+</div>
+
+</div>
+
+<div id="chat-input">
+    <input type="text" id="userMessage" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='chat.js') }}"></script>
+
+</body>
+</html>
+            
+    

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>🏥 MediCare </h2>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+
+<section class="result-box">
+
+<h1>Prediction Result</h1>
+
+<h2>{{ prediction }}</h2>
+
+<p>
+The predicted disease is based on the symptoms entered by the user.
+This prediction is generated using a Machine Learning model.
+Please consult a qualified doctor for proper diagnosis and treatment.
+</p>
+
+<h3>General Precautions</h3>
+
+<ul>
+<li>💧 Drink plenty of water</li>
+<li>🥗 Eat healthy food</li>
+<li>😴 Take proper rest</li>
+<li>💊 Take medicines only as advised by a doctor</li>
+<li>🩺 Visit the nearest hospital if symptoms become severe</li>
+</ul>
+
+<a href="/">
+<button>Predict Again</button>
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Medical Disease Prediction System</p>
+
+</footer>
+
+</body>
+</html>

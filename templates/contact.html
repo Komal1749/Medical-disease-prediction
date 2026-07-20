@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>🏥 MediCare </h2>
+</div>
+
+<nav>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="contact-section">
+
+<h1>Contact Us</h1>
+
+<p>We are here to help you. Feel free to contact us.</p>
+
+<form action="/contact" method="POST">
+
+<input type="text" name="name" placeholder="Enter Your Name" required>
+
+<input type="email" name="email" placeholder="Enter Email Address" required>
+
+<input type="text" name="subject" placeholder="Enter Subject" required>
+
+<textarea name="message" rows="6" placeholder="Write Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+{% if success %}
+<p style="color:green; font-weight:bold;">{{ success }}</p>
+{% endif %}
+
+
+<div class="contact-info">
+
+<h2>Contact Information</h2>
+
+<p>📍 Jalna, Maharashtra, India</p>
+
+<p>📧 komalmore1742009@gmail.com</p>
+
+<p>📞 +91 9960199503</p>
+
+<p>🕒 Monday - Saturday : 9:00 AM - 6:00 PM</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Medical Disease Prediction System</h2>
+
+<p>Developed by <b>Komal More
+                   Aarti Sahane
+                   Aamruta Jadhav
+</b></p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
